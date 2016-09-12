@@ -1,0 +1,34 @@
+body,div,p,h1,h2,h3,h4,h5,h6,img,ul,li{ margin: 0;padding: 0;font-family: inherit;
+    font-size: 100%;font-style: inherit;font-weight: inherit; }
+ul,li{ list-style-type: none; }
+a{ text-decoration: none; }
+.header{ position: fixed;top: 0;width: 100%;height:60px;line-height:60px;background: rgba(198,198,198,0.5);z-index: 9999;  }
+.header .me_mini_pic{ width:50px;height:50px;margin:5px 10px;float: left;border-radius: 50px; overflow:hidden;transition:box-shadow 0.5s; }
+.header .me_mini_pic:hover{ box-shadow:0 0 15px #fff; }
+.header_left{ float: left;height: 20px;line-height: 20px;margin-top:10px;margin-left:10px;font-size: 12px;color: #fff; }
+.header_left li a{ color: #fff; }
+.header_left li a:hover { text-decoration: underline; }
+.header_right{ float: right;margin-right:30px; }
+.header_right li{ height:58px;margin:0 20px;float: left;transition: border 1s;border-bottom:0 solid #fff; }
+.header_right li a{ font-size: 14px;color: #fff;position: relative; }
+.header_right li a:after{ background: #fff;bottom: -20px;content: ""; height: 2px;left: 50%;opacity: 0;position: absolute;right: 50%;transition: all 0.2s ease-in 0s;}
+.header_right li a:hover::after{ left: 0;opacity: 1;right: 0; }
+
+.section1 .me_pic{ width: 200px;height: 200px;border-radius: 50%;box-shadow: 0 0 2px #fff;transition: box-shadow 1s; }
+.section1 .me_pic:hover{ box-shadow: 0 0 20px #1566B9; }
+/*section1*/
+.section1{ background: url(../img/banner.jpg); }
+.info_box{ margin-top: 30px; }
+.info_box p{ height: 30px;line-height: 30px;margin-bottom: 20px; }
+
+/*section2*/
+.section2{ background: url(../img/section2-bg.png); }
+.section2 .content{background: url(../img/section2-bg.png); color:#000;height:100%;position: relative;overflow: hidden;text-align: center; }
+.section2 .content h3{font-size:30px;margin: 80px auto 0 auto;letter-spacing: 10px; }
+.section2 .banner_2{ height:95px;position: absolute;left:0;bottom: 0; }
+.section2 .about_pic{ margin-left:-15px;margin-top: 10px; }
+/*填充*/
+.TC{ width: 100%;height: 40px;background: #000; }
+/*section3*/
+.section3 .content{ height:100%;position: relative;overflow: hidden;text-align: center; }
+.section3 .banner_3{ height:95px;position: absolute;left:0;top:0px; }

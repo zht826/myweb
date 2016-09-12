@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>张海涛的简历</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/main.css">
+<style>
+.section { text-align: center;  color: #fff;}
+</style>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(document).ready(function() {
+	$.fn.fullpage({
+		slidesColor: ['#1bbc9b', '#fff', '#fff', '#fff'],
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		loopBottom: true,
+		menu:"#menu",
+		navigation:true,
+		paddingTop:0,
+		paddingBottom:0
+	});
+});
+</script>
+</head>
+<body>
+	<div class="header" >
+		<div class="me_mini_pic"><img src="img/my-mini.jpg" alt="my-pic"></div>
+		<ul class="header_left">
+			<li>张海涛</li>
+			<li><a href="mailto:zhanghaitao94@126.com">zhanghaitao94@126.com</a></li>
+		</ul>
+		<ul class="header_right">
+			<li><a href="#page1">首 页</a></li>
+			<li><a href="http://www.zht88.top/rejoy/" target="_blank">我的作品</a></li>
+		</ul>
+			
+	</div>
+	<div class="section section1">
+		<img class="me_pic" src="img/my.jpg" alt="my-pic">
+		<div class="info_box">
+			<p class="info_name">张海涛</p>
+			<p class="info_age">22岁</p>
+			<p class="info_p">蹲的越低，跳的越高</p>
+		</div>
+	</div>
+	<div class="section section2">
+		<div class="content">
+			<h3>ABOUT ME</h3>
+			<img class="about_pic" src="img/about.png">
+			<img class="banner_2" src="img/banner-2.jpg">
+		</div>
+	</div>
+	<div class="section section3">
+		<div class="content">
+			<img class="banner_3" src="img/banner-3.jpg">
+			<h3>ABOUT ME</h3>
+		</div>
+	</div>
+	<div class="section">
+		<h3>第四屏</h3>
+		<p>这是最后一屏</p>
+	</div>
+</body>
+</html>
