@@ -22,13 +22,46 @@ a{ text-decoration: none; }
 .info_box p{ height: 30px;line-height: 30px;margin-bottom: 20px; }
 
 /*section2*/
-.section2{ background: url(../img/section2-bg.png); }
-.section2 .content{background: url(../img/section2-bg.png); color:#000;height:100%;position: relative;overflow: hidden;text-align: center; }
+/*.section2{ background: url(../img/section2-bg.png); }*/
+.section2 .content{background: url(../img/section2-bg.png) no-repeat; color:#000;height:100%;position: relative;overflow: hidden;text-align: center; }
 .section2 .content h3{font-size:30px;margin: 80px auto 0 auto;letter-spacing: 10px; }
 .section2 .banner_2{ height:95px;position: absolute;left:0;bottom: 0; }
 .section2 .about_pic{ margin-left:-15px;margin-top: 10px; }
-/*填充*/
-.TC{ width: 100%;height: 40px;background: #000; }
+.section2 .about_detail{ width:100%;margin:80px auto;text-align:center; }
+.section2 .about_detail>li{ float:left;display:block;margin:0 3%;height:100%; }
+.section2 .about_detail li .about_text{ width:250px;height:200px;border-radius:20px;border:2px solid #ddd;margin-top:-30px;padding-top: 50px; position:relative;transition:all 0.5s;}
+.section2 .about_detail li .about_text ul li{ display:block;color:#000;font-size: 12px; }
+.section2 .about_detail li .about_detail_pic{ margin:0 auto;width:60px;height:60px;border-radius:50%;border:2px solid #000;background:#fff;overflow:hidden;z-index:9999;position:relative;transition:all 0.2s; }
+.section2 .about_detail li .about_detail_pic:hover{ background:#ddd;box-shadow:0 0 20px #fff;border:2px solid #ddd; }
+.section2 .about_detail li .about_detail_pic:hover + .about_text{ box-shadow: 0 0 10px #000; }
+.section2 .about_detail li img{ }
+
 /*section3*/
-.section3 .content{ height:100%;position: relative;overflow: hidden;text-align: center; }
-.section3 .banner_3{ height:95px;position: absolute;left:0;top:0px; }
+.section3 .content{ color:#000; height:100%;position: relative;overflow: hidden;text-align: center; }
+.section3 .banner_3{ height:150px;position: absolute;left:0;top:0px; }
+.section3 .content h3{font-size:30px;margin: 80px auto 0 auto;letter-spacing: 10px; }
+.section3 .skill_detail{float: left;position: relative;left: 50%; width:100%;margin:80px auto;text-align:center; }
+.section3 .skill_detail>li{float: left; width:100px;height:400px;position:relative;left:-25%;margin:0 4%;}
+.section3 .skill_detail li .skill_detail_pic{ }
+.section3 .skill_detail li .skill_detail_pic img{ width:60%;height: 60%;transition: all 0.2s; }
+.section3 .skill_detail li .skill_detail_pic img:hover{ transform:scale(1.2);}
+.section3 .skill_detail li .skill_flag{ width: 20px;height: 20px;margin: 20px auto; background: url(../img/skill_flag.png);transition: transform 0.8s ease; }
+.section3 .skill_detail li .skill_text{ display: none; width:300%;height:180px;border-radius:20px;position:relative;left:-100%;background-color:#ddd;overflow: hidden;padding-top: 30px; }
+.section3 .skill_detail li .skill_text li{ text-align:left;font-size:12px;color:#000;margin-top: 10px;margin-left: 20px;}
+
+/*.section3 .skill_detail li .skill_detail_pic{ margin:0 auto;width:60px;height:60px;border-radius:50%;border:2px solid #000;background:#fff;overflow:hidden;z-index:9999;position:relative;transition:all 0.2s; }
+*/
+/*sections*/
+.section4 .content{ color:#000;background:url(../img/section5-bg.png) no-repeat;background-position-bottom:0;height: 100%;position: relative;overflow: hidden;text-align: center;}
+.section4 .content h3{font-size:30px;margin: 80px auto 0 auto;letter-spacing: 10px; }
+.section4 .content .demo_pic{ margin: 10px 0 0 -10px;}
+.section4 .content .demo_detail{ position: relative;}
+.section4 .content .demo_detail div{ width: 25%;height: 230px;border: 1px solid #000;position: absolute;transition: all 1s;border-radius:20px;box-shadow: 10px 10px 10px #000;overflow:hidden;}
+.section4 .content .demo_detail>a{ display: block;width: 39px;height: 80px;position: absolute; }
+.section4 .content .demo_detail img{ width: 100%;height: 100%; }
+.btn_left{ background: url(../img/btn.png);left:10%;top: 100px; }
+.btn_right{ background: url(../img/btn.png);background-position:-39px 0;left:88%;top: 100px; }
+
+.section4 .content .demo_detail .demo1_active{ width:25%;height:230px;left: 15%;top: 0;z-index: 1;opacity: 0.7; }
+.section4 .content .demo_detail .demo2_active{ width:25%;height:230px;left: 60%;top: 0;z-index: 1;opacity: 0.7; }
+.section4 .content .demo_detail .demo3_active{ width: 30%;height: 250px;left: 35%;top: 100px;z-index: 9999;opacity: 1; }
