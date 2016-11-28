@@ -1,17 +1,4 @@
-$(document).ready(function() {
-	$.fn.fullpage({
-		verticalCentered:true,
-		slidesColor: ['#1bbc9b', '#fff', '#fff', '#fff'],
-		anchors: ['page1', 'page2', 'page3', 'page4'],
-		scrollingSpeed:700,
-		loopBottom: true,
-		menu:"#menu",
-		navigation:true,
-		// css3:true,
-		paddingTop:0,
-		paddingBottom:0
-	});
-});
+
 /*skill面板显示-隐藏*/
 $(document).ready(function() {
 	var  a=1;
