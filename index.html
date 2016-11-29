@@ -5,12 +5,15 @@
 	<title>张海涛的简历</title>
 	<meta name="keywords" content="张海涛,张海涛简历,web前端,web前端简历,web前端工程师,web前端招聘,上海web前端招聘,web前端工程师简历" />
 	<meta name="description" content="张海涛的个人简历，职业定位为web前端工程师。" />
-	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/swiper-3.4.0.min.css">
 	<link rel="stylesheet" href="css/main.css">
 <style>
-.section { text-align: center;  color: #fff;}
-	.swiper-container{
+	body{
+        overflow: hidden;
+    }
+    .swiper-container{
 		width:100%;
+		text-align: center;
 	}
 </style>
 	<script src="js/jquery.min.js"></script>
@@ -147,8 +150,8 @@
 						<div class="demo1"><a href="rejoy/index.html" target="_blank"><img src="img/my-demo1.png" alt="my-demo1" /></a></div>
 						<div class="demo2"><a href="rejoy/index.html" target="_blank"><img src="img/my-demo1.png" alt="my-demo1" /></a></div>
 						<div class="demo3"><a href="rejoy/index.html" target="_blank"><img src="img/my-demo1.png" alt="my-demo1" /></a></div>
-						<a href="#" class="btn_left"></a>
-						<a href="#" class="btn_right"></a>
+						<a href="javascript:;" class="btn_left"></a>
+						<a href="javascript:;" class="btn_right"></a>
 					</div>
 
 				</div>
@@ -160,6 +163,7 @@
     $(document).ready(function() {
         var mySwiper = new Swiper ('.swiper-container', {
             direction: 'vertical',
+//            effect : 'cube',//切换效果
             loop: false,
             height:window.innerHeight
         })
