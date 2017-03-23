@@ -1,3 +1,8 @@
+html{
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
 body, div, p, h1, h2, h3, h4, h5, h6, img, ul, li {
     margin: 0;
     padding: 0;
@@ -115,15 +120,18 @@ a {
 .section1 .me_pic {
     width: 200px;
     height: 200px;
+    margin-top: 100px;
     border-radius: 50%;
     -webkit-box-shadow: 0 0 2px #fff;
     -moz-box-shadow: 0 0 2px #fff;
     box-shadow: 0 0 2px #fff;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: box-shadow  1s;
+    -moz-transition: box-shadow 1s;
+    -ms-transition: box-shadow 1s;
+    -o-transition: box-shadow  1s;
+    transition: box-shadow  1s;
+    position: relative;
+    left: 0;
 }
 
 .section1 .me_pic:hover {
@@ -173,7 +181,7 @@ a {
 }
 
 .section2 .about_detail {
-    width: 100%;
+    width: 90%;
     margin: 80px auto;
     text-align: center;
 }
@@ -181,10 +189,13 @@ a {
 .section2 .about_detail > li {
     float: left;
     display: block;
-    margin: 0 3%;
+    margin-right: 4%;
     height: 100%;
+    width: 22%;
 }
-
+.section2 .about_detail > li:last-of-type{
+    margin-right: 0;
+}
 .section2 .about_detail li .about_text {
     width: 250px;
     height: 200px;
@@ -199,7 +210,9 @@ a {
     -o-transition: all .5s;
     transition: all .5s;
 }
-
+.section2 .about_detail li .about_text ul{
+    padding: 0 20px;
+}
 .section2 .about_detail li .about_text ul li {
     display: block;
     color: #000;
@@ -223,15 +236,20 @@ a {
     transition: all .2s;
 }
 
-.section2 .about_detail li .about_detail_pic:hover {
+.section2 .about_detail li:hover .about_detail_pic {
     background: #ddd;
     -webkit-box-shadow: 0 0 20px #fff;
     -moz-box-shadow: 0 0 20px #fff;
     box-shadow: 0 0 20px #fff;
     border: 2px solid #ddd;
 }
-
-.section2 .about_detail li .about_detail_pic:hover + .about_text {
+.section2 .about_detail li .about_detail_pic img{
+    transition:all 0.5s;
+}
+.section2 .about_detail li:hover .about_detail_pic img{
+    transform: translateY(-60px);
+}
+.section2 .about_detail li:hover .about_detail_pic + .about_text {
     -webkit-box-shadow: 0 0 10px #000;
     -moz-box-shadow: 0 0 10px #000;
     box-shadow: 0 0 10px #000;

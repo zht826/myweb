@@ -5,20 +5,24 @@
 	<title>张海涛的简历</title>
 	<meta name="keywords" content="张海涛,张海涛简历,web前端,web前端简历,web前端工程师,web前端招聘,上海web前端招聘,web前端工程师简历" />
 	<meta name="description" content="张海涛的个人简历，职业定位为web前端工程师。" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper-3.4.0.jquery.min.js"></script>
+	<script src="js/main.js"></script>
 	<link rel="stylesheet" href="css/swiper-3.4.0.min.css">
 	<link rel="stylesheet" href="css/main.css">
 <style>
 	body{
         overflow: hidden;
+		width: 100%;
+    	height: 100%;
     }
     .swiper-container{
 		width:100%;
+		height: 100%;
 		text-align: center;
 	}
 </style>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/swiper-3.4.0.jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	
 </head>
 <body>
 	<div class="header" >
@@ -50,7 +54,7 @@
 					<img class="banner_2" src="img/banner-2.gif" alt="banner2"/>
 					<ul class="about_detail">
 						<li>
-							<div class="about_detail_pic"><img src="img/age.png" alt="about-age-pic" /></div>
+							<div class="about_detail_pic"><img src="img/age.png" alt="about-age-pic" /><img src="img/age.png" alt="about-age-pic" /></div>
 							<div class="about_text">
 								<ul>
 									<li>姓名：张海涛</li>
@@ -61,7 +65,7 @@
 							</div>
 						</li>
 						<li>
-							<div class="about_detail_pic"><img src="img/education.png" alt="about-education-pic"/></div>
+							<div class="about_detail_pic"><img src="img/education.png" alt="about-education-pic"/><img src="img/education.png" alt="about-education-pic"/></div>
 							<div class="about_text">
 								<ul>
 									<li>学历：本科</li>
@@ -72,7 +76,7 @@
 							</div>
 						</li>
 						<li>
-							<div class="about_detail_pic"><img src="img/location.png" alt="about-location-pic"/></div>
+							<div class="about_detail_pic"><img src="img/location.png" alt="about-location-pic"/><img src="img/location.png" alt="about-location-pic"/></div>
 							<div class="about_text">
 								<ul>
 									<li>现居住地：徐汇区</li>
@@ -83,7 +87,7 @@
 							</div>
 						</li>
 						<li>
-							<div class="about_detail_pic"><img src="img/status.png" alt="about-status-pic"/></div>
+							<div class="about_detail_pic"><img src="img/status.png" alt="about-status-pic"/><img src="img/status.png" alt="about-status-pic"/></div>
 							<div class="about_text">
 								<ul>
 									<li>认真负责，性格沉稳，做事严谨，对前端开发有着极大兴趣及热情，接触前端之后，用大部分的空闲时间去学习相关知识，并且能够快速理解并应用。</li>
@@ -169,6 +173,21 @@
             height:window.innerHeight
         })
     });
-
+	$('.me_pic').on('click',move);
+	function move(){
+		$('.me_pic').unbind('click');
+		var a = 10;
+		function amt(){
+			$('.me_pic').animate({'left':a +'px'},10,function(){
+				if(a>=0){
+					a-=1;
+					$('.me_pic').animate({'left':-a +'px'},20,amt)
+				}else{
+					$('.me_pic').on('click',move);
+				}
+			});
+		}
+		amt();
+	}
 </script>
 </html>
