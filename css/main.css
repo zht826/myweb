@@ -428,3 +428,19 @@ a {
     z-index: 9999;
     opacity: 1;
 }
+
+.baInfo{
+    width: 100%;
+    height: 30px;
+    background-color: #00aa9F;
+    position:absolute;
+    bottom: 0;
+}
+.baInfo a{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    flex-wrap: 100;
+}
